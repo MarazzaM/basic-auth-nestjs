@@ -41,8 +41,6 @@ export class UsersController {
     return this.usersService.findAll();
   }
 
-
-
   @Patch(':id')
   @UseGuards(JwtAuthGuard)
   @ApiBearerAuth()
